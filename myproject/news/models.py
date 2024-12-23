@@ -9,6 +9,7 @@ class News(models.Model):
     short_txt = models.CharField(max_length=50)
     body_txt = models.CharField(max_length=50)
     date = models.CharField(max_length=50)
+    pic = models.CharField(default='0', max_length=50)
     writer = models.CharField(max_length=50)
    
 
