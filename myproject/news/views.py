@@ -6,6 +6,6 @@ from .models import News
 
 def listnews(request):
 
-    site = News.objects.get(pk=1)
+    site = News.objects.all()
 
     return render(request, 'front/listnews.html', {'site':site })
